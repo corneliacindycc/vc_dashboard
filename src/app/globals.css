@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+:root {
+  --brand: #0059f2;
+  --paper: #fafaf8;
+  --ink: #0a0a0a;
+  --btn: #f2f2f0;
+  --hairline: rgba(10, 10, 10, 0.12);
+}
+
+@theme inline {
+  --color-brand: var(--brand);
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-btn: var(--btn);
+  --font-display: var(--font-display);
+  --font-sans: var(--font-sans);
+}
+
+html,
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans), Inter, Helvetica, sans-serif;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease, opacity 160ms ease;
+}
+
+.display {
+  font-family: var(--font-display), "Archivo Black", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
+  line-height: 0.95;
+}
+
+.btn {
+  background: #f2f2f0;
+  color: #0059f2;
+  border: none;
+  border-radius: 14px;
+  padding: 14px 24px;
+  min-height: 52px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  opacity: 0.92;
+}
+
+.btn-add {
+  color: #0a0a0a;
+}
+
+.btn-dark {
+  background: #0a0a0a;
+  color: #ffffff;
+}
+
+.btn-blue {
+  background: #0059f2;
+  color: #ffffff;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: inherit;
+  border: 1px solid currentColor;
+}
+
+.gh-md h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #21262d;
+  margin: 0 0 1rem;
+  color: #f0f6fc;
+}
+.gh-md h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #21262d;
+  margin: 1.75rem 0 1rem;
+  color: #f0f6fc;
+}
+.gh-md h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.75rem;
+  color: #f0f6fc;
+}
+.gh-md p,
+.gh-md li {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #c9d1d9;
+}
+.gh-md p {
+  margin: 0 0 1rem;
+}
+.gh-md .lead {
+  font-size: 16px;
+  color: #8b949e;
+}
+.gh-md a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+.gh-md a:hover {
+  text-decoration: underline;
+}
+.gh-md code {
+  background: rgba(110, 118, 129, 0.2);
+  padding: 0.15em 0.4em;
+  border-radius: 6px;
+  font-size: 85%;
+}
+.gh-md table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0 1.5rem;
+  font-size: 13px;
+}
+.gh-md th,
+.gh-md td {
+  border: 1px solid #30363d;
+  padding: 8px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+.gh-md th {
+  background: #161b22;
+  color: #f0f6fc;
+}
